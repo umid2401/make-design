@@ -158,9 +158,25 @@ body {
   line-height: normal;
   color: #FFFFFF;
   transition: color 0.3s ease-in-out;
+  display: block;
+  position: relative;
 }
 .header__hero .header__nav-link:hover {
   color: #FD0;
+}
+.header__hero .header__nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: #FFDD00;
+  transition: width 0.3s ease-in-out;
+  display: block;
+}
+.header__hero .header__nav-link:hover::after {
+  width: 100%;
 }
 
 .hero {
