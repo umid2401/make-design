@@ -157,6 +157,10 @@ body {
   font-weight: 400;
   line-height: normal;
   color: #FFFFFF;
+  transition: color 0.3s ease-in-out;
+}
+.header__hero .header__nav-link:hover {
+  color: #FD0;
 }
 
 .hero {
