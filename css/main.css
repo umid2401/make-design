@@ -296,7 +296,7 @@ body {
 }
 .main .selling-points__content-top .line {
   border-radius: 5px;
-  height: 110px;
+  height: 95px;
   width: 7px;
   flex-shrink: 0;
   background-color: #FD0;
@@ -328,7 +328,7 @@ body {
 }
 .main .promo__content-top .line {
   width: 7px;
-  height: 110px;
+  height: 95px;
   background-color: #FD0;
   border-radius: 5px;
 }
@@ -343,6 +343,8 @@ body {
 .main .promo__image-container {
   width: calc(55% - 50px);
   transform: translateY(60px);
+  position: relative;
+  z-index: 5 !important;
 }
 .main .promo__bonus {
   display: flex;
@@ -358,6 +360,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
+  font-family: "SourceSansPro-Regular";
 }
 .main .promo__bonus-left h3 {
   color: #000;
@@ -365,6 +368,261 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 30px;
+  font-family: "SourceSansPro-Regular";
+}
+.main .principles {
+  position: relative;
+  z-index: 6 !important;
+  bottom: 90px;
+  max-width: 1460px;
+  margin: 0 auto -90px auto;
+  width: 100%;
+  border-radius: 150px 50px;
+  background: url("../../assets/images/princples__hero.png") #2C2E35;
+}
+.main .principles__container {
+  max-width: 1260px;
+  padding: 0 30px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 30px;
+}
+.main .principles__top {
+  display: flex;
+  gap: 20px;
+}
+.main .principles__top .line {
+  width: 7px;
+  height: 95px;
+  background-color: #FD0;
+  border-radius: 5px;
+}
+.main .principles__top .left h2 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  color: #FFF;
+  font-family: "SourceSansPro-Regular";
+}
+.main .principles__top .left p {
+  font-family: "Source Sans Pro";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #FFF;
+  font-family: "SourceSansPro-Regular";
+}
+.main .principles__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 25px;
+  margin: 30px 0;
+}
+.main .principles__item {
+  width: calc(50% - 12.5px);
+  display: flex;
+  gap: 25px;
+  align-items: start;
+}
+.main .principles__item-title {
+  color: #FFF;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-family: "SourceSansPro-Regular";
+  margin: 0 0 10px 0;
+}
+.main .principles__item-description {
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: "SourceSansPro-Regular";
+  margin: 15px 0;
+}
+.main .conditions {
+  padding-top: 50px;
+  background-image: url("../../assets/images/flowers.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+.main .conditions__container {
+  max-width: 1260px;
+  padding: 0 30px;
+  width: 100%;
+  margin: 0 auto;
+}
+.main .conditions__tops {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.main .conditions__tops .line {
+  width: 7px;
+  height: 95px;
+  background-color: #FD0;
+  border-radius: 5px;
+}
+.main .conditions__tops .left h2 {
+  color: #2C2E35;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  font-family: "SourceSansPro-Regular";
+}
+.main .conditions__tops .left p {
+  color: #2C2E35;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "SourceSansPro-Regular";
+}
+.main .conditions__list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 30px 0;
+  box-sizing: border-box;
+}
+.main .conditions__item {
+  width: calc(33.3333333333% - 13.3333333333px);
+  border-radius: 10px;
+  border: 1px solid #CDD0D7;
+  padding: 15px;
+  background: #FFF;
+}
+.main .conditions__top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.main .conditions__item-title {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .conditions__item-title .left h3 {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.main .conditions__item-title .left p {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.main .conditions__item-title .right span {
+  color: #CDD0D7;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.main .conditions__bottom {
+  margin-top: 10px;
+}
+.main .conditions__bottom p {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: justify;
+}
+.main .video-thumbnails {
+  margin: 30px 0;
+}
+.main .video-thumbnails__container {
+  max-width: 1260px;
+  padding: 0 30px;
+  width: 100%;
+  margin: 0 auto;
+}
+.main .video-thumbnails__tops {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.main .video-thumbnails__tops .line {
+  width: 7px;
+  height: 95px;
+  background-color: #FD0;
+  border-radius: 5px;
+}
+.main .video-thumbnails__tops .left h2 {
+  color: #2C2E35;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  font-family: "SourceSansPro-Regular";
+}
+.main .video-thumbnails__tops .left p {
+  color: #2C2E35;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  font-family: "SourceSansPro-Regular";
+}
+.main .video-thumbnails__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+.main .video-thumbnails__item {
+  width: calc(33.3333333333% - 13.3333333333px);
+  margin-top: 30px;
+}
+.main .video-thumbnails__item h3 {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-family: "SourceSansPro-Regular";
+  margin: 10px 0;
+}
+.main .video-thumbnails__item p {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  font-family: "SourceSansPro-Regular";
+}
+.main .video-thumbnails__item-preview {
+  width: 100%;
+  height: 243px;
+  position: relative;
+  background-image: url("../../assets/images/video_1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.main .video-thumbnails__item-play-button {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
 }
 
 /*# sourceMappingURL=main.css.map */
