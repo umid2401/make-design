@@ -195,26 +195,28 @@ body {
             transition: color 0.3s ease-in-out;
             display: block;
             position: relative;
-            &:hover{
+
+            &:hover {
                 color: #FD0
             }
+
             &::after {
                 content: '';
                 position: absolute;
                 left: 0;
-                bottom: -4px; 
+                bottom: -4px;
                 width: 0;
                 height: 2px;
                 background-color: #FFDD00;
                 transition: width 0.3s ease-in-out;
                 display: block;
-              }
-            
-              &:hover {
-                &::after{
+            }
+
+            &:hover {
+                &::after {
                     width: 100%;
                 }
-              }
+            }
         }
     }
 }
@@ -268,37 +270,172 @@ body {
             color: #FFFFFF;
         }
     }
-    &__image-wrapper{
-       transform: translate(200px,50px);
-       img{
+
+    &__image-wrapper {
+        transform: translate(200px, 50px);
+
+        img {
             width: 115%;
-       }
+        }
     }
 
 }
 
 .main {
     width: 100%;
+    padding: 80px 0;
 
     .selling-points {
         @include container();
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+
+
+        &__content {
+            width: 50%;
+        }
+
+        &__image-container {
+            text-align: center;
+            width: 50%;
+
+            img {
+                width: 75%;
+            }
+        }
+
+        &__title {
+            color: #2C2E35;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            position: relative;
+            text-wrap: nowrap;
+            line-height: 45px;
+        }
+
+        &__description {
+            color: #000;
+            font-size: 19px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
+            margin: 10px 0;
+        }
+
+        &__benefit {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            gap: 10px;
+        }
+
+        &__benefit-text {
+            color: #000;
+            font-family: "Source Sans Pro";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 25px;
+        }
+
+        &__content-top {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            height: auto;
+
+            .line {
+                border-radius: 5px;
+                height: 110px;
+                width: 7px;
+                flex-shrink: 0;
+                background-color: #FD0;
+            }
+        }
 
     }
 
-    &__title {
-        width: 50%;
-        color: #2C2E35;
-        font-size: 48px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: normal;
-        &::after{
-            content: "";
-            position: absolute;
+    .promo {
+        @include container();
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        &__content-left {
+            width: 45%;  
+        }
 
+        &__title {
+            color: #2C2E35;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 45px;
+        }
+
+        &__content-top {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            .line {
+                width: 7px;
+                height: 110px;
+                background-color: #FD0;
+                border-radius: 5px;
+            }
+        }
+
+        &__description {
+            color: #000;
+            font-size: 19px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 30px;
+            margin: 10px 0;
+        }
+
+        &__image-container {
+            width: calc(55% - 50px);
+            transform: translateY(60px);
+        }
+
+        &__bonus {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+
+            svg {
+                display: block;
+            }
+        }
+
+        &__bonus-left {
+            p {
+                color: #000;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px;
+            }
+
+            h3 {
+                color: #000;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 30px;
+            }
+        }
+
+    }
+    .principles{
+
+        &__container{
+            
         }
     }
 }
